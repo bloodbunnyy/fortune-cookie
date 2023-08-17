@@ -34,4 +34,5 @@ USER node
 EXPOSE 3000
 # Set the default command to use for `docker run`.
 # `npm start` simply starts our server.
-CMD [ "npm", "start" ]
+#CMD [ "npm", "start" ]
+CMD [ "nodemon", "-L", "-x", "npm start" ]
