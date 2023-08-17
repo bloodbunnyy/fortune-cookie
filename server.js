@@ -29,7 +29,7 @@ const app = express();
 const d = new Date();
 
 app.get('/', (req, res) => {
-    res.send('Hello World!' + d);
+    res.send('Your fortune is: \n' + d);
 });
 
 // Start web application server
